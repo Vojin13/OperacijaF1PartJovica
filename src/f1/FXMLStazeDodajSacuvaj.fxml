@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane id="FlowPane" orientation="vertical" prefHeight="470" prefWidth="350" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="f1.StazeDodajSacuvajController">
+    <children>       
+      <Label fx:id="nazivLb" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="350.0" prefHeight="17.0" prefWidth="164.0" text="Naziv" textAlignment="RIGHT">
+         <FlowPane.margin>
+            <Insets top="20.0" />
+         </FlowPane.margin></Label>
+      <TextField fx:id="nazivTF">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin></TextField>
+      <Label fx:id="lokacijaLb" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="350.0" prefHeight="17.0" prefWidth="164.0" text="Lokcija" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+      <TextField fx:id="lokacijaTF" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label fx:id="drzavaLb" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="350.0" prefHeight="17.0" prefWidth="164.0" text="Država" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+      <TextField fx:id="drzavaTF" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label fx:id="tipStazeLb" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="350.0" prefHeight="17.0" prefWidth="164.0" text="Tip" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+      <TextField fx:id="tipStazeTF" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Label fx:id="duzinaLb" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="350.0" prefHeight="17.0" prefWidth="164.0" text="Dužina" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+      <TextField fx:id="duzinaTF" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label fx:id="smerLb" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="350.0" prefHeight="17.0" prefWidth="164.0" text="Smer" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+      <TextField fx:id="smerTF" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            
+      <Button onAction="#dodajStazu" text="Dodaj" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      
+      <Button fx:id="sacuvajBtn" mnemonicParsing="false" onAction="#sacuvajStaze" text="Sačuvaj" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+    </children>
+</FlowPane>

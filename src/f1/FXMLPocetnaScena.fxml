@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane id="AnchorPane" prefHeight="500.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="f1.PocetnaScenaController">
+   <children>
+      
+    <!--  <SplitMenuButton fx:id="stazeSMBtn" layoutX="51.0" layoutY="495.0" mnemonicParsing="false" onAction="#scenaStaze" text="STAZE" textFill="#da0917">
+        <items>
+           <MenuItem fx:id="dodajStazuSMBtn" mnemonicParsing="false" onAction="#dodajStazu" text="Dodaj" />
+           <MenuItem fx:id="promeniStazuSMBtn" mnemonicParsing="false" onAction="#dodajStazu" text="Izmeni" />
+           <MenuItem fx:id="obrisiStazuSMBtn" mnemonicParsing="false" onAction="#dodajStazu" text="Obriši" />
+        </items>
+         <font>
+            <Font name="Tw Cen MT" size="18.0" />
+         </font>
+      </SplitMenuButton>
+      -->
+      <Hyperlink fx:id="stazeHL" layoutX="69.0" layoutY="27.0" onAction="#scenaStaze" prefHeight="48.0" prefWidth="69.0" text="Staze">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="timovi" layoutX="146.0" layoutY="34.0" onAction="#scenaTimovi" text="Timovi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>         
+   </children>
+</FlowPane>

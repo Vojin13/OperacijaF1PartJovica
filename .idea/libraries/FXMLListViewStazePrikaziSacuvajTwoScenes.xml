@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FXMLListViewStazePrikaziSacuvajTwoScenes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/FXMLListViewStazePrikaziSacuvajTwoScenes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

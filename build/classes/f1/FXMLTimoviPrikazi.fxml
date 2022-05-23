@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="500.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="f1.TimoviPrikaziController">
+   <children>
+      <ListView fx:id="timoviLV" layoutX="25.0" layoutY="7.0" onMouseClicked="#izaberiTim" prefHeight="481.0" prefWidth="210.0" />
+      <ImageView fx:id="vozac1Img" fitHeight="237.0" fitWidth="285.0" layoutX="470.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="vozac2Img" fitHeight="237.0" fitWidth="285.0" layoutX="818.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="bolidImg" fitHeight="110.0" fitWidth="389.0" layoutX="600.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="timOpis" layoutX="315.0" layoutY="100.0" text="timOpis" />
+      <Button layoutX="1064.0" layoutY="459.0" mnemonicParsing="false" text="Dodaj" />
+      <Label fx:id="prviVozac" layoutX="596.0" layoutY="277.0" text="prviVozac" />
+      <Label fx:id="drugiVozac" layoutX="944.0" layoutY="277.0" text="drugiVozac" />
+      <Label fx:id="bolid" layoutX="778.0" layoutY="464.0" text="bolid" />
+      <Button layoutX="989.0" layoutY="459.0" mnemonicParsing="false" onAction="#nazad" text="Nazad" />
+   </children>
+</Pane>

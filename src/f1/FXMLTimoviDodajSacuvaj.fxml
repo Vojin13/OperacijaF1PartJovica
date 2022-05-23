@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="f1.TimoviDodajSacuvajController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="btnDodaj" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="29.0" layoutY="118.0" prefHeight="23.0" prefWidth="71.0" text="Naziv tima:" />
+            <Label layoutX="118.0" layoutY="14.0" prefHeight="60.0" prefWidth="365.0" text="Dodavanje novog tima:">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="182.0" prefHeight="23.0" prefWidth="71.0" text="Ime:" />
+            <Label layoutX="29.0" layoutY="235.0" prefHeight="23.0" prefWidth="71.0" text="Ime:" />
+            <Label layoutX="301.0" layoutY="182.0" prefHeight="23.0" prefWidth="71.0" text="Prezime" />
+            <Label layoutX="301.0" layoutY="235.0" prefHeight="23.0" prefWidth="71.0" text="Prezime" />
+            <Label layoutX="29.0" layoutY="302.0" prefHeight="23.0" prefWidth="71.0" text="Model sasije" />
+            <TextField fx:id="ime1TF" layoutX="65.0" layoutY="181.0" prefHeight="25.0" prefWidth="220.0" />
+            <TextField fx:id="ime2TF" layoutX="65.0" layoutY="234.0" prefHeight="25.0" prefWidth="220.0" />
+            <TextField fx:id="prezime1TF" layoutX="357.0" layoutY="181.0" prefHeight="25.0" prefWidth="220.0" />
+            <TextField fx:id="prezime2TF" layoutX="357.0" layoutY="234.0" prefHeight="25.0" prefWidth="220.0" />
+            <TextField fx:id="sasijaTF" layoutX="118.0" layoutY="301.0" prefHeight="25.0" prefWidth="220.0" />
+            <Button fx:id="dodajBtn" layoutX="481.0" layoutY="346.0" mnemonicParsing="false" onAction="#dodajTim" prefHeight="40.0" prefWidth="109.0" text="Dodaj" />
+            <TextField fx:id="nazivTF" layoutX="100.0" layoutY="117.0" prefHeight="25.0" prefWidth="220.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

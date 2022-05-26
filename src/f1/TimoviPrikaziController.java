@@ -116,6 +116,7 @@ public class TimoviPrikaziController implements Initializable {
         Logger.getLogger(TimoviPrikaziController.class.getName()).log(Level.SEVERE, null, ex);
         }
     } 
+
     
 
     // metoda za učitavanje fajla staze.ser u ArrayList staze, i

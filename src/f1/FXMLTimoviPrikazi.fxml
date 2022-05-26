@@ -18,5 +18,6 @@
       <Label fx:id="drugiVozac" layoutX="944.0" layoutY="277.0" text="drugiVozac" />
       <Label fx:id="bolid" layoutX="778.0" layoutY="464.0" text="bolid" />
       <Button layoutX="989.0" layoutY="459.0" mnemonicParsing="false" onAction="#nazad" text="Nazad" />
+      <Button fx:id="izbrisiBtn" layoutX="1062.0" layoutY="421.0" mnemonicParsing="false" onAction="#izbrisiTim" text="Izbrisi" />
    </children>
 </Pane>

@@ -62,6 +62,8 @@ public class TimoviPrikaziController implements Initializable {
     private Label drugiVozac;    
     @FXML
     private Label bolid;
+    @FXML
+    private Button izbrisiBtn;
     
     
     
@@ -72,8 +74,8 @@ public class TimoviPrikaziController implements Initializable {
             ucitajTimove();              
              
             for(Tim tim : f1FXML.getTimovi()) {
-                if (tim.getNazivTima().equals(timoviLV.getSelectionModel().getSelectedItem())) {            
-                    
+                if (tim.getNazivTima().equals(timoviLV.getSelectionModel().getSelectedItem())) {
+
                     List<Vozac> aktivniVozaci = new ArrayList<>();
                     aktivniVozaci = tim.getVozaci().stream().filter(vozac -> vozac.getUloga1().equals("DRIVERFIRST") || vozac.getUloga1().equals("DRIVERSECOND")).collect(Collectors.toList());
                                    
@@ -209,5 +211,17 @@ public class TimoviPrikaziController implements Initializable {
         newWindow.setY(secondScene.getY() + 500);
 
         newWindow.show();
+    }
+
+    public void izbrisiTim()
+    {
+            if(f1FXML.getTimovi().get(timoviLV.getSelectionModel().getSelectedIndex()).getNazivTima().equals(timoviLV.getSelectionModel().getSelectedItem().toString()));
+            {
+                System.out.println(timoviLV.getSelectionModel().getSelectedItem().toString());
+                f1FXML.getTimovi().remove(timoviLV.getSelectionModel().getSelectedIndex());
+                f1FXML.getTimoviNazivOL().remove(timoviLV.getSelectionModel().getSelectedIndex());
+            }
+
+
     }
 }
